@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Exercises - 4</title>
+	<style type="text/css">
+	body{
+		font-family: 'Open Sans', sans-serif;
+	}
+	body::after{
+		content: "";
+		background-size: cover;
+		display: block;
+		top:0;
+		width: 100%;
+		height: 130%;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		/*background: url("../images/pic-crowd.JPG") no-repeat center center;*/
+		/*background: url("https://s1.wp.com/home.logged-out/images/pic-crowd.webp?2") no-repeat center center;*/
+		background:#DCDCDC;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #fff;
+		border-bottom: 1px solid #DCDCDC;
+		height: 4rem;
+		left: 0;
+		margin-bottom: 1.6rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		
+
+	}
+	li{
+		float:left;
+		font-weight: 300;
+		
+	}
+	.icon{
+		margin:0;
+	}
+	li img{
+		padding:8px 50px;
+		line-height:100px;
+
+	}
+	li a {
+		display: inline-block;
+		color:#000;
+		line-height:64px;
+		font-family: arial;
+		font-size:14px;
+		font-weight:300;
+		padding:0 30px;
+		text-decoration: none;
+	}
+	a:hover{
+		background:#DCDCDC;
+	}
+	/*li{
+		float:left;
+		font-weight: 300;
+
+
+	}
+	li img{
+
+		padding-top: 8px;
+		padding-bottom:8px;
+
+	}
+
+	li a {
+		display: inline-block;
+		color:rgba(255,255,255,1);
+		text-align: center;
+		padding-top:18px;
+		padding-bottom:18px;
+		text-decoration: none;
+	}
+
+	.wplogin:hover {
+		background-color: #49B3E3;
+	}
+	.wplogin{
+		padding-right:20px;
+		margin-right:200px;
+		margin-left:200px;
+		padding-left:20px;
+		float:right;
+		background-color:#0073A5;
+		font-size: 13.5px;
+	}
+	.wpicon{
+		padding-left:220px;
+
+	}
+	.wpname{
+		padding-left:5px;
+	}
+	span{
+
+		color:rgba(255,255,255,0.6);
+	}
+
+	.text{
+		min-height: 100vh;
+		padding: 45px 30px 0;
+		border: 0;
+		margin: 15px;
+		padding: 0;
+		text-align: center;
+		color:white;
+	}
+	.text h1{
+		font-size: 2.5em;
+		line-height: 1.25;
+		margin: 0 auto;
+		font-weight: 400;
+		padding-top: 100px;
+
+	}
+	.text h2{
+
+		line-height: 1.5em;
+		margin: 0 auto;
+		max-width: 100%;
+		font-size:1.5em;
+		font-weight: 200;
+		padding-top: 20px;
+		padding-bottom:20px;
+	}
+
+	.btn{
+		background: #1e8cbe;
+		border: 0;
+		color: #fff;
+		float: center;
+		font-size: 1.5em;
+		margin-top: 20px;
+		margin-bottom:20px;
+		padding: 0.5em 1em;
+		transition: background 200ms ;
+		cursor: auto;
+		box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.5);
+
+	}
+
+	.btn:hover{
+		background-color: #49B3E3;
+	}
+
+	.box{
+
+		width:100%;
+		text-align:center;
+		margin:0;
+		padding:0;
+		color:white;
+
+	}
+
+	.innerbox{
+		display:inline-block;
+		padding:20px;
+		margin:20px;
+		height:230px;
+		width:260px;
+	}
+
+	.innerbox a{
+		color:#f2ffff;
+
+		text-decoration:none;
+	}
+	.innerbox:hover{
+
+		background-color: rgba(0,0,0,0.5);
+	}
+	p{
+		line-height: 1.4em;
+	}
+	.link{
+		border-bottom: 2px solid rgba(16,139,192,0.9);
+		display: inline;
+
+	}
+
+	.websiteicon::before{
+		content: "\f475";
+	}
+
+	.blogicon::before{
+		content: "\f8a9";
+	}
+	.discovericon::before{
+		content: "\f8a2";
+	}
+
+	@font-face {
+		font-family: "Noticons";
+		font-style: normal;
+		font-weight: 400;
+		src: url("/i/noticons/Noticons.eot?") format("embedded-opentype");
+	}
+	@font-face {
+		font-family: "Noticons";
+		font-style: normal;
+		font-weight: 400;
+		src: url("https://s1.wp.com/i/noticons/Noticons.woff") format("woff"), url("/i/noticons/Noticons.ttf") format("truetype"), url("/i/noticons/Noticons.svg#Noticons") format("svg");
+	}
+	@font-face {
+		font-family: "Noticons";
+		src: url("/i/noticons/Noticons.svg#Noticons") format("svg");
+	}
+	.noticon {
+		display: inline-block;
+		font-family: "Noticons";
+		font-size: 32px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight:normal;
+		line-height: 1;
+		text-align: center;
+		text-decoration: inherit;
+		text-transform: none;
+		vertical-align: top;
+		border: 1px solid;
+		border-radius:32px;
+		padding:15px;
+	}
+*/
+	</style>
+</head>
+<body class="home">
+
+	<header>
+		<ul>
+			<li class="icon"><img src="..\images\chimp.JPG"/></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">More</a></li>
+			<li><a href="#">Sign Up Free</a></li>
+			<li><a href="#">Log in</a></li>
+		
+		
+		</ul>
+	</header>
+	
+					</body>
+					</html>

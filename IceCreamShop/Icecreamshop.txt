@@ -1,0 +1,11 @@
+Ice Cream Shop web site consists of 
+
+index.html ---> Main Home Page
+icecreams.html --->Page for Ice Cream Cones
+milkshakes.html --->Page for Milkshakes 
+floatsIcecream.html --->Page for Floats
+
+All the images are in img folder
+All the css files are in css folder
+All javascript files are in js folder
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taruni's Website</title>
+	<style>
+	img
+	{
+		width:100%;
+		height:100px;
+	}
+	iframe
+	{
+		width:100%;
+		height:400px;
+	}
+	#demo
+	{
+		color:DarkBlue;
+		font-weight:bold;
+		font-style: italic;
+	}
+	button
+	{
+		background-color:Gainsboro;
+		border:none;
+	}
+	a{
+		background-color:Gainsboro;
+	}
+	</style>
+	<script>
+	function displayDate()
+	{
+		document.getElementById("demo").innerHTML ="Phone:469-412-6938"+"<br/>"+
+		"Address:4913 Archdale Ln,Columbus Ohio 43214";
+	}
+	</script>
+</head>
+<body>
+
+	<img src="http://patriciagallardo.com/wp-content/uploads/2013/04/Colores-Significados-percepciones-el-coolor-comunica-Diario-Clar%C3%ADn-Patricia-Gallardo-Branding-Marcas-ambientacione-Feng-shui-Patricia-Traversa-.jpg">
+	<iframe src="resume.html"name="frame1"></iframe>
+	<br/>
+	<br/>
+	<table>
+		<tr>
+			<td><a href="..\files\Resume2015Final.pdf" target="frame1">Click for Resume in pdf format</a></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			<td><button onclick="displayDate()">Click for Contact Details</button></td>
+		</tr>
+		<tr>
+			<td><a href="resume.html" target="frame1">Click for Resume in web page format</a></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			<td><p id="demo"></p></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Ice Creams Form</title>
+    <link rel="icon" href="img/icecream.ico" type="image/x-icon"/>
+    <style>
+    body{ 
+        background: url("img/cones.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    </style>
+    <script type="text/javascript" src="js/icecreams.js"></script>
+    <link href="css/icecreamshop.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+
+    <h1>Ice Cream Cones</h1>
+
+    <div class="mainMenu">
+        <div class="navBar">
+            <nav class="navigate"> 
+                <ul class="navigateUs">
+                    <a href="index.html"><li class="iceCreamNav">Home</li></a> 
+                    <a href="milkshakes.html"><li class="iceCreamNav">Milk Shakes</li></a>
+                    <a href="floatsIcecream.html"><li class="iceCreamNav">Floats</li></a>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="wrap">
+
+            <form action="" id="icecreamform" onsubmit="return false;">
+                <div>
+                    <div class="cont_order">
+                       <fieldset>
+                        <legend>Make your Ice Cream!</legend>
+                        <label >Size Of the Cone or Cup</label>
+                        <label class='radiolabel'><input type="radio"  name="selectedconecup" value="WSmall" />Waffle Classic Small ($5)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedconecup" value="WRegular" />Waffle Classic Regular ($10)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedconecup" value="WLarge"  />Waffle Classic Large($15)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedconecup" value="WSmallCup"  />Waffle Small Cup ($5)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedconecup" value="WBowl"  />Waffle Bowl ($20)</label><br/>
+
+                        <br/>
+                        <label>Select One Flavor for One Scoop and Two Flavors for Two Scoops</label>
+                        <br/>
+
+                        <label >Flavor One</label>
+
+                        <select id="filling" name='filling'>
+                            <option value="None">Select Flavor</option>
+                            <option value="Vanilla">Vanilla ($5)</option>
+                            <option value="Cherry">Cherry ($5)</option>
+                            <option value="Strawberry">Strawberry ($7)</option>
+                            <option value="Chocolate">Chocolate ($8)</option>
+                            <option value="Raspberry">Raspberry($10)</option>
+                        </select>
+                        <br/>
+
+                        <label >Flavor Two</label>
+
+                        <select id="filling2" name='filling2'>
+                            <option value="None">Select Flavor</option>
+                            <option value="Vanilla">Vanilla ($5)</option>
+                            <option value="Cherry">Cherry ($5)</option>
+                            <option value="Strawberry">Strawberry ($7)</option>
+                            <option value="Chocolate">Chocolate ($8)</option>
+                            <option value="Raspberry">Raspberry($10)</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div id="totalPrice"></div>
+                    </fieldset>
+                </div>
+                <input type='submit' id="submit" class="button" value='Pay Now' onclick="calculateTotal()" />
+            </div>  
+        </form>
+    </div><!--End of wrap-->
+</body>
+</html>

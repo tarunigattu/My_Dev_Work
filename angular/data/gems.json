@@ -1,0 +1,54 @@
+[
+	{ 
+		"name": "Dodecahedron",  
+		"price": 2.95, 
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus leo sed ipsum posuere, vel vulputate libero sollicitudin. Cras eu nisl at nulla dapibus consectetur. Curabitur volutpat malesuada magna, in facilisis neque gravida quis.",
+		"canPurchase": true,
+		"soldOut": false,
+		"images": [
+			"images/gem-02.gif",
+			"images/gem-05.gif"
+		],
+		"reviews": [ 
+			{ 
+				"stars": 5, 
+				"body": "I love this product!",  
+				"author": "joe@thomas.com" 
+			},  
+			{ 
+				"stars": 1, 
+				"body": "This product sucks",  
+				"author": "tim@hater.com" 
+			} 
+		]
+	},
+	{ 
+		"name": "Pentagonal Gem",  
+		"price": 5.95,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus leo sed ipsum posuere, vel vulputate libero sollicitudin. Cras eu nisl at nulla dapibus consectetur. Curabitur volutpat malesuada magna, in facilisis neque gravida quis.",
+		"canPurchase": true,
+		"soldOut": false,
+		"images": [],
+		"reviews": []
+	},
+	{ 
+		"name": "Dodecahedron Special",  
+		"price": 12.95, 
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus leo sed ipsum posuere, vel vulputate libero sollicitudin. Cras eu nisl at nulla dapibus consectetur. Curabitur volutpat malesuada magna, in facilisis neque gravida quis.",
+		"canPurchase": false,
+		"soldOut": false,
+		"images": [
+			"images/gem-09.gif"
+		],
+		"reviews": []
+	},
+	{ 
+		"name": "Pentagonal Gem Star",  
+		"price": 15.95,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus leo sed ipsum posuere, vel vulputate libero sollicitudin. Cras eu nisl at nulla dapibus consectetur. Curabitur volutpat malesuada magna, in facilisis neque gravida quis.",
+		"canPurchase": true,
+		"soldOut": false,
+		"images": [],
+		"reviews": []
+	}
+]

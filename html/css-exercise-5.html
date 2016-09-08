@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Image Sprite</title>
+		<style type="text/css">
+			button{
+				margin:0;
+				padding:0;
+				background:#fff;
+				color:#000;
+				line-height:38px;
+				font-size:12px;
+				font-weight:bold;
+				text-transform:uppercase;
+				padding:5px;
+				border:1px solid #999;
+			}
+			button::before{
+				content:"";
+				width:35px;
+				height:35px;
+				display:inline-block;
+				float:left;
+				margin:1px;
+				background:url(http://info.appdirect.com/uploads/blog/Content/2011/SVG-icons.png) no-repeat 0 0;
+				
+			}
+
+			button.question::before{
+
+				background-position: -2px -4px;
+			}
+			button.info::before{
+
+				background-position: -38px -4px;
+			}
+			button.currency::before{
+
+				background-position: -76px -4px;
+			}
+			button.temperature::before{
+
+				background-position: -113px -4px;
+			}
+			button.email::before{
+
+				background-position: -187px -116px;
+			}
+			button:hover{
+				background:gray;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="question">
+			
+			Question
+		</button>
+		<button class="info">
+			
+			Information
+		</button>
+		<button class="currency">
+			
+			Currency
+		</button>
+		<button class="temperature">
+			
+			Temperature
+		</button>
+		<button class="email">
+			
+			Email
+		</button>
+	</body>
+</html>

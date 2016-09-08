@@ -1,0 +1,44 @@
+header{
+	text-align:center;
+}
+.calciscreen ,.btn7,.btn8,.btn9,.btn4,.btn5,.btn6,.btn1,.btn2,.btn3,.btndivision,.btnmultiply,.btnsubtract,.btn0,.btnperiod,.btnequal,.btnaddition{
+	margin:20px;
+
+}
+.calci{
+			/*width:375px;*/
+			margin:30px auto;
+			border:1px solid;
+			padding:20px;
+			max-width:375px;
+}
+
+@media (max-width: 451px) {
+  .calci {
+         overflow: hidden;
+         min-width:375px;
+}
+}
+
+.btnclear{
+	margin-left:302px;
+}
+.calciscreen{
+	height:35px;
+	width:328px;
+	margin-bottom:0;
+}
+.btn7 button,.btn8 button,.btn9 button,.btn4 button,.btn5 button,.btn6 button,.btn1 button,.btn2 button,.btn3 button,.btnclear button,.btndivision button,.btnmultiply button,.btnsubtract button,.btn0 button,.btnperiod button,.btnequal button,.btnaddition button {
+	padding:10px;
+	height:50px;
+	width:50px;
+	cursor:pointer;
+
+
+}
+.btn7,.btn8,.btn9,.btn4,.btn5,.btn6,.btn1,.btn2,.btn3,.btnclear,.btndivision,.btnmultiply,.btnsubtract,.btn0,.btnperiod,.btnequal,.btnaddition{
+	display:inline;
+}
+.div1,.div2,.div3,.divclear,.div4{
+	margin-top:10px;
+}

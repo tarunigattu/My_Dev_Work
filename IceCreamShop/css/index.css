@@ -1,0 +1,42 @@
+
+.lastimages{
+  margin-right:60px;
+}
+.image123{
+	margin-left:200px;
+  margin-top:30px;
+  
+}
+.imgContainer{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  color:#000;
+  padding-right:30px;
+  float:left;
+  margin-bottom:50px;
+}
+.button {
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color:turquoise;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-right: 10px;
+}
+
+.button:hover {background-color: yellow}
+
+.button:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

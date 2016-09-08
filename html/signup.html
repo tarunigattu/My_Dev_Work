@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign up Form</title>
+  <style>
+  .span1
+  {
+    color:red;
+  }
+  table,tr,td
+  {
+   
+    padding:15px;
+    font-weight:bold;
+    font-family:Arial;
+
+  }
+  .formtextbox
+  {
+    height:30px;
+    width:600px;
+  }
+  .table2
+  {
+    font-weight:normal;
+    font-family:Arial;
+  }
+  #checkbox1
+  {
+    background-color:DarkTurquoise;
+  }
+  #signup
+  {
+    background-color:OrangeRed;
+    color:white;
+    height:40px;
+    width:175px;
+    font-family:Arial;
+    float:right;
+    border:none;
+  }
+  select
+  {
+
+    background-color:WhiteSmoke;
+    border-color:Gainsboro;	
+    height:30px;
+    width:65px;
+  }
+  input
+  {
+   border-color:Gainsboro;
+ }
+ #hr1
+ {
+  color:WhiteSmoke;
+}
+</style>
+</head>
+<body>
+ <form name="signupform" id="signupform">
+  <table>
+   <tr>
+    <td>First name:<span class="span1">*</span><br/>
+     <input type="text" name="firstname" class="formtextbox"><br/>
+   </td>
+   <td>Screen name:<span class="span1">*</span><br/>
+     <input type="text" name="screenname" class="formtextbox"><br/>
+   </td>
+ </tr>
+ <tr>
+  <td>Last name:<span class="span1">*</span><br/>
+    <input type="text" name="lastname" class="formtextbox"><br/>
+  </td>
+  <td>Date of Birth:<span class="span1">*</span><br/>
+   <select name="month" id="month">
+    <option value="month">MM</option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+  <select name="day" id="day">
+    <option value="day">DD</option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+  <select name="year" id="year">
+    <option value="year">YYYY</option>
+    <option value="1985">1985</option>
+    <option value="1986">1986</option>
+    <option value="1987">1987</option>
+    <option value="1988">1988</option>
+    <option value="1989">1989</option>
+    <option value="1990">1990</option>
+    <option value="1991">1991</option>
+    <option value="1992">1992</option>
+    <option value="1993">1993</option>
+    <option value="1994">1994</option>
+    <option value="1995">1995</option>
+    <option value="1996">1996</option>
+    <option value="1997">1997</option>
+    <option value="1998">1998</option>
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+  </select>
+</td>
+</tr>
+<tr>
+  <td>Email Address:<span class="span1">*</span><br/>
+    <input type="email" name="email" class="formtextbox"><br/>
+  </td>
+  <td>Gender:<span class="span1">*</span><br/>
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="male"> Male
+  </td>
+</tr>
+<tr>
+  <td>Password:<span class="span1">*</span><br/>
+   <input type="password" name="password" class="formtextbox">
+ </td>
+ <td>Zipcode:<span class="span1">*</span><br/>
+   <input type="text" name="zipcode" class="formtextbox">
+ </td>
+</tr>
+<tr>
+  <td>Confirm Password:<span class="span1">*</span><br/>
+   <input type="password" name="cpassword" class="formtextbox">
+ </td>
+ <td><br/>
+   <input type="checkbox" name="offers" id="checkbox1" checked> Sign up for emails to learn about the latest styles,special offers and services from Nike.
+ </td>
+</tr>
+<tr>
+  <td style="font-weight:normal;"><span class="span1">*</span>Required Fields</td>
+</tr>
+</table>
+<hr id="hr1"/>
+<table >
+ <tr>
+  <td class="table2">By clicking SIGN UP,you are agreeing to the <ins>Nike Policy</ins> and <ins>Terms & conditions</ins>.
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+    <input type="submit" name="signup" value="SIGN UP" id="signup">
+  </td>
+</tr>
+</table>	
+</form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+	
+body{
+	width:96%;
+	margin-left:25px;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+.navigate {
+	background-color: turquoise;
+	height:10%;
+}
+.navigateUs{
+	width:100%;
+	padding-top: 15px;
+}
+.iceCreamNav {
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-size: 20px;
+	color:#fff;
+	display: inline;
+	padding-left:100px;
+	padding-right: 200px;
+}
+.navigateUs a{
+
+	text-decoration: none;
+}
+
+h1{
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-size: 30px;
+	font-weight: 200;
+	color:#fff;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: turquoise;
+
+}
+
+#wrap{
+	width:100%;
+	margin:0 auto;
+	text-align:left;
+	margin-top:8px;
+	padding:5px;
+	background:rgba(0,0,0,0.2);
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-size:13px;    
+	line-height:16px;
+}
+#wrap .cont_details fieldset,.cont_order fieldset{
+	margin:10px;
+	padding:20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+#wrap legend{
+	font-size:18px;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	color:#000;
+	font-weight:bold;
+	font-style:italic;
+	padding-bottom:10px;
+}
+#wrap .cont_details input{
+	margin-bottom:10px;
+	color:#000;
+}
+#wrap .input1:hover,.input1:active{
+	
+}
+#wrap label{
+	display:block;
+	font-size:16px;
+	color:#000;
+	font-weight:bold;
+
+}
+#wrap label.inlinelabel
+{
+	display:inline;
+}
+#wrap .cont_order input{
+	margin-bottom:5px;
+}
+
+
+#wrap input[type="radio"]
+{
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+#wrap input#submit
+{
+	margin:10px 600px 10px 600px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#wrap div#totalPrice
+{
+	padding:10px;
+	font-weight:bold;
+	background-color:#ff0;
+}
+
+#wrap label.radiolabel
+{
+	font-weight:normal;
+	display:inline;
+}
+

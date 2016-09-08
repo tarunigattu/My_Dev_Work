@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href="../css/instagram.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="box">
+    <div class="column1">
+     <div class="tag">
+      <div>
+        <img src="../images/coffeeinstagram.jpg" class="slideshowimages">
+      </div>
+      <div>
+       <img src="../images/treesinstagram.jpg" class="slideshowimages">
+     </div>
+     <div>
+       <img src="../images/skyinstagram.jpg" class="slideshowimages">
+     </div>
+     <div>
+       <img src="../images/collageinstagram.jpg" class="slideshowimages">
+     </div>
+     <div>
+       <img src="../images/contactsinstagram.jpg" class="slideshowimages">
+     </div>
+
+   </div>
+   <!--    <img src="https://instagramstatic-a.akamaihd.net/h1/images/homepage/home-phones.png/26f8f9119be7.png" id="mainimage"/> -->
+   <img src="../images/phone.png" id="mainimage"/>
+ </div>
+ <div class="column2">
+  <div class="innerbox">
+    <div class="heading"><h1 class="mh1 mh coreSpriteNavigationBrand">Instagram</h1></div>
+
+    <div id="logIn">
+      <form name="loginForm" action="/login" method="post">
+        <div><input type="text" name="username" placeholder="Username"/></div>
+        <div><input type="password" name="password" placeholder="Password                               Forgot?"/></div>
+        <div class="login"><button name="loginButton" class="btns">Log in</button></div>
+      </form>
+      <div class="seperation">
+        <div class="seperationline online"></div>
+        <div class="orclass online">or</div>
+        <div class="seperationline online"></div>
+      </div>
+      <div class="loginfb"><button name="fbloginpage" class="fbloginpage"><span class="_n8pg2 coreSpriteFacebookIcon"></span>Log in with Facebook</button></div>
+    </div>
+    <div id="signUp">
+      <div class="para"><h3>Sign up to see photos and videos from your friends</h3></div>
+      <div class="loginfb"><button name="fblogin" class="btns"><span class="_a0z3x coreSpriteFacebookIconInverted"></span>Log in with Facebook</button></div>
+      <div class="seperation">
+        <div class="seperationline online"></div>
+        <div class="orclass online">or</div>
+        <div class="seperationline online"></div>
+      </div>
+      <form name="signupForm" action="/signup" method="post">
+        <div><input type="email" name="email" placeholder="Email"/></div>
+        <div><input type="text" name="fullname" placeholder="Full Name"/></div>
+        <div><input type="text" name="username" placeholder="Username"/></div>
+        <div><input type="password" name="password" placeholder="Password"/></div>
+        <div class="signup"><button name="signupButton" class="btns">Sign up</button></div>
+      </form>
+      <div id="terms">
+        <h5 class="terms">By signing up, you agree to our <span class="grayboldtext">Terms &amp; Privacy Policy.</span></h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="outerdiv"><h4 class="loginlink">Have an account?<a onclick="login()">Log in</a></h4></div>
+  <div class="appdiv"><h4 class="applink">Get the app.</h4>
+    <div class="innerappdiv"><img src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png" id="appstore"/><img src="https://instagramstatic-a.akamaihd.net/h1/images/appstore-install-badges/english_get.png/74c874cf7dc5.png" id="googleplay"/></div>
+  </div>
+</div>
+<!-- <div class="lowerdiv">hjdfhkdf</div> -->
+</div>
+<div class="box2">
+  <div class="footer">
+    <div class="innerfooter">
+      <ul class="footerMenu">
+        <li class="footerlinks"><a>ABOUT US</a></li>
+        <li class="footerlinks"><a>SUPPORT</a></li>
+        <li class="footerlinks"><a>BLOG</a></li>
+        <li class="footerlinks"><a>PRESS</a></li>
+        <li class="footerlinks"><a>API</a></li>
+        <li class="footerlinks"><a>JOBS</a></li>
+        <li class="footerlinks"><a>PRIVACY</a></li>
+        <li class="footerlinks"><a>TERMS</a></li>
+        <li class="footerlinks"><a>LANGUAGE</a></li>
+        <li class="copyright"><a><span class="lightgraytext">&#169;</span>2016 INSTAGRAM</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script src="../js/instagram.js"></script>
+</body>
+</html>

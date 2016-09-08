@@ -1,0 +1,90 @@
+body,button,section {font-family: Rockwell;}
+button {
+  background-color: #00cc99;
+  color:#ffffff;
+}
+
+button.btnAdd{
+   margin-left:5px;
+  height:30px;
+}
+div#todolistitems {
+  margin-top:35px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #e6e6e6;
+  padding-bottom:20px;
+  max-width: 500px;
+}
+div#todolist{
+  overflow: auto;
+}
+
+header,p{
+  text-align: center;
+}
+h1 {
+  color:#00cc99;
+  display:inline;
+}
+
+ul {
+  list-style: none;
+  padding:0;
+  border:0px;
+ /* overflow: auto;*/
+  /*display:inline-block;*/
+}
+div#todolist{
+  margin:35px;
+  border:0px;
+  padding:0px;
+}
+
+li.tasklist{
+ /* background: #eee;*/
+  padding:10px;
+  margin:0px;
+  color:#527a7a;
+  background-color: #ffffcc;
+  display: inline-block;
+/*  overflow: auto;*/
+/*  width:100%;*/
+}
+
+/*#todolist{
+  overflow: auto;
+}
+button.remove,button.save,button.edit{
+  float:right;
+}*/
+li span {
+  padding-left: 10px;
+  cursor: default;
+}
+button.done,button.undone{
+  font-size:16px;
+}
+#taskbox {
+  height:25px;
+}
+input {
+  color:#527a7a;
+  background-color: #ffffcc;
+ /* margin-bottom:10px;*/
+  border:1px solid lightgray;
+ /* max-width: 250px;*/
+  width:75%;
+}
+input:focus {
+  background-color: #ffffff;
+}
+img {
+  margin-top:5px;
+  width:35px;
+}
+.strike-through {
+  text-decoration: line-through;
+}
+.undone {background-color: #00cc99;}
+.done {background-color:  #ffdb4d;}

@@ -1,0 +1,37 @@
+<html ng-app="gemStore">
+  <head>
+    <title>My Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../angular/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../angular/css/gem-store.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <header></header>
+
+      <hr/>
+      
+      <div ng-controller="StoreController as store">
+        <div ng-repeat="gem in store.gems" ng-hide="gem.soldOut">
+          <strong class="pull-right">{{gem.price | currency}}</strong>
+          <h4>{{gem.name}}</h4>
+          <button ng-show="gem.canPurchase"> Add to Cart </button>
+          <ul class="gallery">
+            <li ng-repeat="image in gem.images">
+              <img ng-src="{{image}}" />
+            </li>
+          </ul>
+          <product-panels></product-panels>
+          <hr/>
+        </div>
+
+      </div>
+      <div footer></div>
+    </div>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../angular/js/gemStore.js"></script>
+    <script type="text/javascript" src="../angular/js/global.js"></script>
+  </body>
+</html>

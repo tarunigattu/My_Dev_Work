@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Floats Form</title>
+    <link rel="icon" href="img/float.ico" type="image/x-icon"/>
+    <style>
+    body{ 
+        background: url("img/floats.jpg");
+        background-size: cover;
+    }
+
+    </style>
+    <script type="text/javascript" src="js/floatsicecream.js"></script>
+    <link href="css/icecreamshop.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <h1>Floats</h1>
+
+    <div class="mainMenu">
+        <div class="navBar">
+            <nav class="navigate"> 
+                <ul class="navigateUs">
+                    <a href="index.html"><li class="iceCreamNav">Home</li></a> 
+                    <a href="icecreams.html"><li class="iceCreamNav">Ice Creams</li></a>
+                    <a href="milkshakes.html"><li class="iceCreamNav">Milk Shakes</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="wrap">
+
+            <form action="" id="floatsform" onsubmit="return false;" >
+                <div>
+                    <div class="cont_order">
+                     <fieldset>
+                        <legend>Make your Float!</legend>
+                        <label >Soda</label>
+                        <label class='radiolabel'><input type="radio"  name="selectedsoda" value="Coke" />Coke ($10)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedsoda" value="Pepsi" />Pepsi ($10)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedsoda" value="DrPepper" />Dr Pepper ($10)</label><br/>
+
+                        <br/>
+                        <label >Vanilla Scoops ($5/Scoop)</label>
+                        <label>How many Scoops for Vanilla ?</label>
+                        <input type="number" name="vanillascoop" min="0" id="vanillascoop"/>
+                        <br/>
+                        <label >Cherry Scoops ($5/Scoop)</label>
+                        <label>How many Scoops for Cherry ?</label>
+                        <input type="number" name="cherryscoop" min="0" id="cherryscoop"/>
+                        <br/>
+                        <label >Strawberry Scoops ($7/Scoop)</label>
+                        <label>How many Scoops for Strawberry ?</label>
+                        <input type="number" name="strawberryscoop" min="0" id="strawberryscoop"/>
+                        <br/>
+                        <label >Chocolate Scoops ($8/Scoop)</label>
+                        <label>How many Scoops for Chocolate ?</label>
+                        <input type="number" name="chocolatescoop" min="0" id="chocolatescoop"/>
+                        <br/>
+                        <label >Raspberry Scoops ($10/Scoop)</label>
+                        <label>How many Scoops for Chocolate ?</label>
+                        <input type="number" name="raspberryscoop" min="0" id="raspberryscoop"/>
+                        <br/>
+                        <br/>
+                        <div id="totalPrice"></div>
+                        
+                    </fieldset>
+                </div>
+                
+
+                <input type='submit' id='submit' class='button' value='Pay Now' onclick="calculateTotal()" />
+            </div>  
+        </form>
+    </div><!--End of wrap-->
+
+</body>
+</html>

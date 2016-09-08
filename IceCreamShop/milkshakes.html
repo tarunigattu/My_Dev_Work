@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>MilkShakes Form</title>
+    <link rel="icon" href="img/milkshake.ico" type="image/x-icon"/>
+    <style>
+    body{ 
+        background: url("img/milk.jpg");
+        background-size: cover;
+
+    }
+
+    </style>
+    <script type="text/javascript" src="js/milkshakes.js"></script>
+    <link href="css/icecreamshop.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <h1>Milk Shakes</h1>
+
+    <div class="mainMenu">
+        <div class="navBar">
+            <nav class="navigate"> 
+                <ul class="navigateUs">
+                    <a href="index.html"><li class="iceCreamNav">Home</li></a> 
+                    <a href="icecreams.html"><li class="iceCreamNav">Ice Creams</li></a>
+                    <a href="floatsIcecream.html"><li class="iceCreamNav">Floats</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="wrap">
+            <form action="order.html" id="milkshakesform" onsubmit="return calculateTotal()" method="post" >
+                <div>
+                    <div class="cont_order">
+                     <fieldset>
+                        <legend>Make your Milk Shake!</legend>
+                        <label >What Type of Milk For Your Milk Shake?</label>
+                        <label class='radiolabel'><input type="radio"  name="selectedmilk" value="Skim" onclick="calculateTotal()" />Skimmed Milk ($20)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedmilk" value="Whole" onclick="calculateTotal()" />Whole Milk ($25)</label><br/>
+                        <label class='radiolabel'><input type="radio"  name="selectedmilk" value="TwoPercent" onclick="calculateTotal()" />2% Milk ($15)</label><br/>
+                        
+                        <br/>
+                        <label >Choose Any Flavor</label>
+                        <br/>
+                        <select id="flavor" name='flavor' onchange="calculateTotal()">
+                            <option value="None">Select Flavor</option>
+                            <option value="Vanilla">Vanilla ($5)</option>
+                            <option value="Cherry">Cherry ($5)</option>
+                            <option value="Strawberry">Strawberry ($7)</option>
+                            <option value="Chocolate">Chocolate ($8)</option>
+                            <option value="Raspberry">Raspberry($10)</option>
+                        </select>
+                        
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div id="totalPrice"></div>
+                        
+                    </fieldset>
+                </div>
+                
+
+                <input type='submit' id='submit' class='button' value='Buy Now' onclick="calculateTotal()" />
+            </div>  
+        </form>
+    </div><!--End of wrap-->
+
+</body>
+</html>

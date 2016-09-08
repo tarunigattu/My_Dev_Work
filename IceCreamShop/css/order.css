@@ -1,0 +1,10 @@
+h2 {
+	font-size: larger;
+	text-align: center;
+	margin-top: 200px;
+	color: darkblue;
+	background-color: aliceblue;
+}
+body{
+	background-color: rgb(139, 111, 0);
+}

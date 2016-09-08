@@ -1,0 +1,464 @@
+  body{
+    background-color: #FAFAFA;
+  }
+/*  h1 {
+    font: 42px 'Lobster Two', Helvetica, sans-serif;
+    color:#125688;
+    padding:0;
+    margin:10px 20px 10px 20px;
+    text-align:center;
+    }*/
+
+    .box {
+      width:100%;
+      display:box;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-orient:horizontal;
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-orient:horizontal;
+      /* W3C */
+      display:box;
+      box-orient:horizontal;
+    }
+
+    .box2 {
+      width:100%;
+      display:box;
+      margin-top:20px;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-orient:horizontal;
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-orient:horizontal;
+      /* W3C */
+      display:box;
+      box-orient:horizontal;
+    }
+
+    .box .column1 {
+      -moz-box-flex:1.0; /* Firefox */
+      -webkit-box-flex:1.0; /* Safari and Chrome */
+      -ms-flex:1.0; /* Internet Explorer 10 */
+      box-flex:1.0;
+      background: #FAFAFA;
+    }
+
+    .column1{
+      position: relative;
+    }
+
+    .tag {
+      width:35%;
+      height:57%;
+      position: absolute;
+      left: 380px;
+      top: 163px;
+      z-index: 1000;
+      background-color:transparent;
+      padding: 0px;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+
+    .box .column2 {
+      -moz-box-flex:1.0; /* Firefox */
+      -webkit-box-flex:1.0; /* Safari and Chrome */
+      -ms-flex:1.0; /* Internet Explorer 10 */
+      box-flex:1.0;
+      background: #FAFAFA;
+    }
+
+
+    #logIn{
+      display:none;
+    }
+
+    #mainimage{
+      margin:68px 0 68px 200px;
+      /*height:618px;*/
+      float:right;
+    }
+    .fbloginpage{
+      width:calc(100% - 57px);
+      display:block;
+      margin:0px 30px 30px 30px;
+      padding:7px;
+      background: white;
+      color: #4b4f54;
+      /* border-radius: 5px;*/
+      /*text-transform:uppercase;*/
+      cursor:pointer;
+      border:none;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: segoe UI;
+
+    }
+
+    .innerbox{
+      width:50%;
+      /* display:box;*/
+      background-color: white;
+      /* min-height:400px;*/
+      /*  width:400px;*/
+      margin:30px 0px 0px 0px;
+      border:0;
+      /* background-color:#CCC;*/
+      padding:0px;
+      border:1px solid #e6e6e6;
+    }
+
+    .footer{
+      width:100%;
+      /* display:box;*/
+      /*    background-color: white;*/
+      /* min-height:400px;*/
+      /*  width:400px;*/
+      height:30px;
+      margin:0px 0px 0px 0px;
+      border:0;
+      /*  background-color:#CCC;*/
+      padding:0px;
+      border:0px;
+      display:inline-block;
+    }
+
+    #signUp{
+      margin:0;
+      padding:0;
+    }
+    input{
+      /*rgb(237 238 238)*/
+      border:1px solid #f2f2f2;
+      width:calc(100% - 80px);
+      padding:10px;
+      margin:5px 30px 5px 30px;
+      display:block;
+      border-radius:2px;
+      background-color: #FDFDFD;
+      /* color:#424242;*/
+      color:#000000;
+      font-family: 'Helvetica Neue',Helvetica, Arial;
+      font-weight:normal;
+      font-size:14px;
+    }
+
+    .btns{
+      width:calc(100% - 57px);
+      display:block;
+      margin:10px 30px 10px 30px;
+      padding:7px;
+      background: #4090db;
+      color: #ffffff;
+      border-radius: 5px;
+      /*text-transform:uppercase;*/
+      cursor:pointer;
+      border:none;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: segoe UI;
+
+    }
+    input:focus{
+      background-color:#ffffff;
+    }
+    button:hover{
+      background-color: #DCDCDC;
+    }
+    .heading{
+      overflow:auto;
+      text-align:center;
+      padding:0;
+      margin:0;
+
+    }
+
+    h3{
+      padding:0;
+      margin:0px 35px 10px 35px;
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Helvetica Neue',Helvetica, Arial;
+      font-weight: bold;
+      /*font-weight: bold;*/
+    }
+    .para{
+      overflow:auto;
+      text-align:center;
+      padding:0;
+      margin:0px;
+      color:#a5a7aa;
+      line-height: 1.3em;
+
+    }
+    .signup,.login{
+      margin:0;
+      padding:0;
+    }
+    .loginfb{
+      overflow:hidden;
+      text-align:center;
+      padding:0;
+      margin:0;
+    }
+
+    #terms{
+     overflow:auto;
+     text-align:center;
+     padding:0;
+     margin:0;
+   }
+   .outerdiv{
+     width:50%;
+     overflow:auto;
+     text-align:center;
+     padding:0;
+     margin:0px;
+   }
+
+   .appdiv{
+    width:50%;
+    overflow:auto;
+    text-align:center;
+    padding:0;
+    margin-top:20px;
+  }
+
+  .innerappdiv{
+    margin-top:10px;
+  }
+
+  h4.loginlink{
+   /*   padding:0px 0px 20px 0px;*/
+   /*margin:10px 25px 10px 25px;*/
+   text-align: center;
+   border:1px solid #e6e6e6;
+   background-color: white;
+   /* border:1px solid lightgray;*/
+   margin:10px 0px 0px 0px;
+   padding:20px 0px 20px 0px;
+   font-family: segoe UI;
+   font-weight: normal;
+   color:#4b4f54;
+   font-size:14px;
+ }
+
+ h4.applink{
+   text-align: center;
+   /* border:1px solid lightgray;*/
+   margin:10px 0px 0px 0px;
+   /*padding:20px 0px 20px 0px;*/
+   font-family: segoe UI;
+   font-weight: normal;
+   color:#4b4f54;
+   font-size:14px;
+ }
+
+ h5.terms{
+  padding:0px 0px 0px 0px;
+  margin:10px 40px 30px 40px;
+  line-height:1.5em;
+  text-align: center;
+  font-family: 'Helvetica Neue',Helvetica, Arial;
+  font-weight: normal;
+  color:#818488;
+  font-size:14px;
+}
+.btns:hover{
+  background-color: #2d6599;
+}
+.fbloginpage:hover{
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+ color: #424242;
+}
+
+.seperation {
+
+  margin: 10px 30px 20px 30px;
+
+}
+.seperationline {
+  background-color: #c9cbcc;
+  /*width: 100px;*/
+  width:calc(100% - 150px);
+  height: 1px;
+  margin:0px;
+}
+.orclass{
+  color: #a5a7aa;
+  font-size: 13px;
+  font-weight: 600;
+  /* line-height: 1.3em;*/
+  margin: 2px 5px;
+  text-transform: uppercase;
+}
+
+.online{
+ display: inline-block;
+}
+
+a{
+  color: #2092d1;
+  cursor:pointer;
+}
+a:link {
+  color:#2092d1;
+}
+
+/* visited link */
+a:visited {
+  color:#424242;
+}
+
+/* mouse over link */
+a:hover {
+  color:#2092d1;
+}
+
+/* selected link */
+a:active {
+  color: #2092d1;
+}
+
+#appstore{
+ height:40px;
+ width:calc(100% - 200px);
+ margin-right:5px;
+}
+
+#googleplay{
+ height:40px;
+ width:calc(100% - 200px);
+ margin-left:5px;
+}
+span.grayboldtext{
+  font-weight: bold;
+}
+
+ul{
+  margin-left:120px;
+  margin-right:120px;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footerMenu li{
+  display:inline-block;
+  padding:0px 10px;
+  line-height:1.5em;
+  font-family: segoe UI;
+  font-size: 11px;
+  font-weight: bold;
+
+
+}
+
+.footerMenu .footerlinks a{
+  color: #125688;
+}
+
+.innerfooter{
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+
+.copyright{
+  margin-left:275px;
+  float:right;
+  /*margin-right:100px;*/
+  /*float:right;*/
+}
+
+.copyright a{
+  color:#424242;
+}
+
+.tag > div { 
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  right: 0px; 
+  bottom: 0px; 
+}
+
+.slideshowimages{
+  width:247px;
+  height:430px;
+}
+
+
+._a0z3x {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+
+.coreSpriteFacebookIconInverted {
+  background-image: url("https://instagramstatic-a.akamaihd.net/h1/sprites/core/6f2033.png");
+  background-repeat: no-repeat;
+  background-position: -439px -322px;
+  /*background-color: red;*/
+  height: 16px;
+  width: 16px;
+
+}
+
+._n8pg2 {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+
+
+.coreSpriteFacebookIcon {
+  background-image: url("https://instagramstatic-a.akamaihd.net/h1/sprites/core/6f2033.png");
+  background-repeat: no-repeat;
+  background-position: -326px -288px;
+  height: 16px;
+  width: 16px;
+}
+
+
+.mh1 {
+  margin: 20px auto 10px;
+}
+
+
+.mh {
+  display: block;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+.coreSpriteNavigationBrand {
+  background-image: url("https://instagramstatic-a.akamaihd.net/h1/sprites/core/6f2033.png");
+  background-repeat: no-repeat;
+  background-position: 0px -322px;
+  height: 49px;
+  width: 171px;
+}
+
+.lightgraytext{
+  color:lightgray;
+}
+
+@media (max-width: 1122px){
+  .column1{
+    display:none;
+  }
+
+  .column2{
+    margin:0 auto;
+  }
+}

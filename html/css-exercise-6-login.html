@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Exercises - 6</title>
+		<style type="text/css">
+		.box{
+			width:300px;
+			margin:30px auto;
+			border:0;
+			background-color:#CCC;
+			padding:20px;
+			
+		}
+	/*#logIn{
+			display:none;
+		}*/
+		#signUp{
+		display:none;	
+		}
+		input,button{
+			border:1px solid #777;
+			width:calc(100% - 42px);
+			padding:10px;
+			margin:10px;
+			display:block;
+		}
+		h1{
+			text-align:center;
+		}
+		input:focus{
+			background-color:#ecf7f9;
+		}
+		button{
+			width:calc(100% - 22px);
+			/*margin:10px;
+			padding:10px;*/
+			background:#333;
+			color:#FFF;
+			text-transform:uppercase;
+			cursor:pointer;
+			
+		}
+		button:hover{
+			background-color: #DCDCDC;
+		}
+		.loginMenu{
+			overflow:auto;
+			text-align:center;
+			padding:0;
+			
+		}
+		.loginMenu li{
+			display:inline-block;
+			padding:0px 10px;
+			background:#DCDCDC;
+			line-height:50px;
+			height:50px;
+			
+		}
+		a{
+		text-decoration:none;
+		font-size:16px;	
+		text-transform: uppercase;
+		font-weight:bold;
+		}
+		li:hover{
+			background-color: green;
+		}
+		</style>
+	</head>
+		<div class="box">
+			<ul class="loginMenu">
+				<li><a href="#logIn">Log In</a></li>
+				<li><a href="#signUp">Sign Up</a></li>
+			<ul>
+			<div id="logIn">
+				<h1>Log In</h1>
+				<form name="loginForm" action="/login" method="post">
+					<div><input type="email" name="email" placeholder="Email"/></div>
+					<div><input type="password" name="password" placeholder="Password"/></div>
+					<div><button name="loginButton">Log In</button></div>
+				</form>
+			</div>
+			<div id="signUp">
+				<h1>Sign Up</h1>
+				<form name="signupForm" action="/signup" method="post">
+					<div><input type="email" name="email" placeholder="Enter your Email"/></div>
+					<div><input type="password" name="password" placeholder="Enter your Password"/></div>
+					<div><input type="password" name="confirmpassword" placeholder="Confirm your Password"/></div>
+					<div><button name="signupButton">sign Up</button></div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
